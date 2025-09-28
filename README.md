@@ -2,8 +2,6 @@
 
 Una aplicación web moderna y receptiva construida con React, Vite y React Router. Esta aplicación ofrece una experiencia completa de compras en línea con listados de productos, funcionalidad de carrito de compras y un proceso de pago seguro.
 
-Demo <https://juanpabloleonf.github.io/project-tecnica/>
-
 ## 🚀 Características
 
 - **Diseño Responsive**: Diseño completamente adaptable que funciona en todos los dispositivos
