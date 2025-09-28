@@ -1,0 +1,30 @@
+.container-step {
+    width: 70%;
+    height: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+.container-step i {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scale: 1;
+    transition: scale 0.8s ease-in-out;
+}
+
+.container-step p {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    scale: 1;
+    transition: scale 0.8s ease-in-out;
+}

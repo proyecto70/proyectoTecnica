@@ -1,0 +1,202 @@
+
+.nav-responsive {
+    display: none;
+}
+
+.nav-normal {
+    width: 100vw;
+    height: var(--header-height);
+    background-color: var(--white-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.5rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    color: var(--three-color);
+    scrollbar-gutter: stable both-edges;
+}
+
+.nav-normal .title-logo {
+    font-size: 1.5rem;
+    background: var(--linear-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    font-family: var(--font-family-heading);
+    font-weight: 400;
+    font-style: normal;
+}
+
+.nav-normal .container-menu {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.nav-normal .container-menu > a {
+    font-size: clamp(0.8rem, 1.2vw, 1rem);
+    padding: 0.1rem;
+    border-bottom: 1px solid transparent;
+    cursor: pointer;
+    position: relative;
+    color: var(--three-color);
+}
+
+.nav-normal .container-menu > a:hover {
+    color: var(--secondary-color);
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+.nav-normal .container-img-cart-shop {
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.nav-normal .container-img-cart-shop i {
+    font-size: 1.7rem;
+}
+
+.nav-normal .container-img-cart-shop i:hover {
+    color: var(--secondary-color);
+}
+
+.nav-normal .container-img-cart-shop p {
+    background-color: var(--secondary-color);
+    position: absolute;
+    font-size: 0.9rem;
+    top: -10%;
+    right: -5%;
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white-color);
+}
+
+.nav-normal.scrolled,
+.nav-responsive.scrolled {
+    background-color: var(--primary-opacity-color);
+    transition: background-color 0.3s ease;
+}
+
+
+@media screen and (max-width: 768px) {
+    .nav-normal {
+        display: none;
+    } 
+
+    .nav-responsive {
+        width: 100vw;
+        height: var(--header-height);
+        background-color: var(--white-color);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 10;
+        color: var(--black-color);
+    }
+
+    .nav-responsive .title-logo {
+        font-size: 1.2rem;
+        background: var(--linear-gradient);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: transparent;
+        font-family: var(--font-family-heading);
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .nav-responsive .container-nav-img {
+        width: 20%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-responsive .container-nav-img i {
+        font-size: 2rem;
+        color: var(--three-color);
+    }
+
+    .nav-responsive .container-img-cart-shop {
+        width: 20%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        cursor: pointer;
+    }
+
+    .nav-responsive .container-img-cart-shop i {
+        font-size: 2rem;
+        color: var(--three-color);
+    }
+
+    .nav-responsive .container-img-cart-shop p {
+        position: absolute;
+        font-size: 0.9rem;
+        top: 10%;
+        right: 10%;
+        width: 1.2rem;
+        height: 1.2rem;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--white-color);
+        background-color: var(--secondary-color);
+    }
+
+    .nav-responsive .container-nav {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 70vh;
+        background-color: var(--white-color);
+        opacity: 0.8; 
+        backdrop-filter: var(--blur-px);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        z-index: 15;
+    }
+
+    .nav-responsive .container-nav a {
+        width: 100%;
+        height: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        color: var(--black-color);
+        font-size: 1.5rem;
+    }
+
+    .nav-responsive .container-nav a:hover {
+        background-color: var(--primary-color);
+        color: var(--secondary-color);
+    }
+    
+}

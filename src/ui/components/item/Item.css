@@ -1,0 +1,116 @@
+.container-list-items .container-item {
+    width: 100%;
+    height: 7rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    align-items: stretch;
+    padding: 0.5rem;
+    gap: 0.5rem;
+    flex-shrink: 0;
+    position: relative;
+    border: 1px solid var(--three-color);
+    color: var(--three-color);
+    border-top-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+
+.container-list-items .container-item:hover {
+    border: 1px solid var(--secondary-color);
+    color: var(--secondary-color);
+}
+
+.container-list-items .container-item > i {
+    background-color: var(--three-color);
+    position: absolute;
+    top: 5%;
+    left: 2%;
+    width: 1.2rem;
+    height: 1.2rem;
+    font-size: 0.9rem;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white-color);
+    cursor: pointer;
+}
+
+.container-list-items .container-item > i:hover {
+    color: var(--white-color);
+    background-color: var(--secondary-color);
+}
+
+.container-list-items .container-item .container-img-item {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-list-items .container-item .container-info-item {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.container-list-items .container-item .container-info-item .info-item {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0.5rem;
+}
+
+.container-list-items .container-item .container-info-item .container-counter-item {
+    width: 10%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0.5rem;
+    border: 1px solid var(--three-color);
+}
+
+.container-list-items .container-item:hover .container-info-item .container-counter-item {
+    border: 1px solid var(--secondary-color);
+}
+
+.container-list-items .container-item .container-info-item .container-counter-item p {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-list-items .container-item .container-info-item .container-counter-item p:nth-child(1) {
+    border-top-right-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+}
+
+.container-list-items .container-item .container-info-item .container-counter-item p:nth-child(3) {
+    border-bottom-right-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+}
+
+.container-list-items .container-item .container-info-item .container-counter-item p:hover:nth-child(1),
+.container-list-items .container-item .container-info-item .container-counter-item p:hover:nth-child(3) {
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+    cursor: pointer;
+} 
+
+.container-list-items .container-item .container-img-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}

@@ -1,0 +1,219 @@
+main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/imgs/f3.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 1rem;
+}
+
+main .container-payment {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    max-width: var(--max-width);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 1rem;
+    background: linear-gradient(90deg, var(--black-color) 0%, rgba(0, 0, 0, 0.87) 40%, rgba(0, 0, 0, 0.048) 100%);
+}
+
+main .container-payment > i {
+    position: absolute;
+    font-size: 0.9rem;
+    bottom: 2%;
+    left: 1%;
+    cursor: pointer;
+    color: var(--white-color);
+}
+
+main .container-payment > i:hover {
+    color: var(--three-color);
+}
+
+main .container-payment .section-continued {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 2rem;
+    color: var(--white-color);
+}
+
+main .container-payment .section-continued .container-list-steps {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+main .container-payment .section-forms {
+    width: 60%;
+    height: 100%;  
+    overflow: hidden; 
+}
+
+main .container-payment .section-forms .container-form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-shrink: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+main .container-payment .section-forms .container-form .container-form-data {
+    width: 50%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    position: relative;
+    color: var(--secondary-color);
+}
+
+main .container-payment .section-forms .container-form .container-form-data label {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transform: translate(0%, 0%);
+    transition: all 0.3s ease-in-out;
+}
+
+main .container-payment .section-forms .container-form .container-form-data input {
+    width: 100%;
+    height: 60%;
+    border-radius: 0.5rem;
+    border: none;
+    outline: none;
+    padding: 0.5rem;
+    border: 1px solid var(--secondary-color);
+    background-color: rgba(0, 0, 0, 0.178);
+    transition: all 0.3s ease-in-out;
+    color: var(--white-color);
+}
+
+main .container-payment .section-forms .container-form .container-form-data:focus-within label {
+    color: var(--three-color);
+}
+
+main .container-payment .section-forms .container-form .container-form-data input:focus {
+    border: 1px solid var(--three-color);
+    color: var(--white-color);
+}
+
+main .container-payment .section-forms .container-form .container-buttons {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+main .container-payment .section-forms .container-form .container-buttons button {
+    width: 20%;
+    height: 3rem;
+    border: none;
+    outline: none;
+    border-top-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    padding: 0.5rem;
+    border: 2px solid var(--three-color);
+    background-color: transparent;
+    color: var(--three-color);
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+main .container-payment .section-forms .container-form .container-buttons button:hover {
+    color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+main h2 {
+    text-transform: uppercase;
+    font-size: clamp(1rem, 5vw, 1.7rem);
+    background: var(--linear-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    font-family: var(--font-family-heading);
+    font-weight: 400;
+    font-style: normal;
+    font-size: clamp(1rem, 5vw, 1.7rem);
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (width <= 768px) {
+
+    main {
+        width: 100%;
+        height: auto;
+        padding: 0rem;
+    }
+
+    main .container-payment {
+        height: 60rem;
+        flex-direction: column;
+        padding: 0rem;
+        padding: 1rem 0;
+        padding-top: 4rem;
+        border-radius: 0rem;
+        background: linear-gradient(180deg, var(--black-color) 0%, rgba(0, 0, 0, 0.87) 40%, rgba(0, 0, 0, 0.048) 100%);
+    }
+
+    main .container-payment > i {
+        position: absolute;
+        font-size: 0.9rem;
+        top: 2%;
+        left: 5%;
+        cursor: pointer;
+        color: var(--white-color);
+    }
+
+    main .container-payment .section-continued {
+        width: 100%;
+        height: 40%;
+        gap: 1rem;
+    }
+
+    main .container-payment .section-forms {
+        width: 100%;
+        height: 60%;  
+        overflow: hidden; 
+    }
+
+    main .container-payment .section-forms .container-form .container-form-data {
+        width: 90%;
+        height: 15%;
+    }
+
+    main .container-payment .section-forms .container-form .container-buttons {
+        height: 15%;
+    }
+    
+    main .container-payment .section-forms .container-form .container-buttons button {
+        width: 35%;
+        height: 60%;
+    }
+}   

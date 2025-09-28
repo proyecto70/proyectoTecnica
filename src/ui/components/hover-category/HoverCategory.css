@@ -1,0 +1,26 @@
+.container-hover-category {
+    background-color: rgba(212, 212, 212, 0.623);
+    backdrop-filter: blur(5px);
+    position: absolute;
+    top: 80%;
+    left: calc( 50% - 10rem );
+    width: max-content;
+    height: auto;
+    cursor: default;
+    z-index: 15;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-content: center;
+    gap: 1.5rem;
+}
+
+.container-hover-category > p {
+    font-size: 1rem;
+    cursor: pointer;
+    color: black;
+}
+
+.container-hover-category > p:hover {
+    color: aqua;
+}

@@ -1,0 +1,128 @@
+/* import fonts */
+
+@font-face {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-style: normal;
+  src: url("https://fonts.shopifycdn.com/poppins/poppins_n4.934accbf9f5987aa89334210e6c1e9151f37d3b6.woff2?&hmac=a26c177067467710b799e13b71d5721f54b5f733f905988a09d37a77232f0126") format("woff2"), url("https://fonts.shopifycdn.com/poppins/poppins_n4.ee28d4489eaf5de9cf6e17e696991b5e9148c716.woff?&hmac=f99517b82b6da9de0cdfe8aceb40e4132652b5e3e3d1c3b0906fe722b210b3bf") format("woff"); 
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Poppins;
+  font-weight: 400;
+  font-style: normal;
+  src: url("https://fonts.shopifycdn.com/poppins/poppins_n4.934accbf9f5987aa89334210e6c1e9151f37d3b6.woff2?&hmac=a26c177067467710b799e13b71d5721f54b5f733f905988a09d37a77232f0126") format("woff2"), url("https://fonts.shopifycdn.com/poppins/poppins_n4.ee28d4489eaf5de9cf6e17e696991b5e9148c716.woff?&hmac=f99517b82b6da9de0cdfe8aceb40e4132652b5e3e3d1c3b0906fe722b210b3bf") format("woff"); 
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Poppins;
+  font-weight: 300;
+  font-style: normal;
+  src: url("https://fonts.shopifycdn.com/poppins/poppins_n3.bf4dd4af82ac263dde50abfd3dfa16485ed1e002.woff2?&hmac=71aca5c1b34623d5de18c8c2b935c22f530299c88d8e966e0d17477dccd52668") format("woff2"), url("https://fonts.shopifycdn.com/poppins/poppins_n3.6758f33361b35d8ab1e3e2f74c575be1fc4c1fda.woff?&hmac=dd70a531acd930fcde442f888ad1fd5a51d9218df223f1074fdb5ba51851c9c0") format("woff");
+  font-display: swap; 
+}
+
+@font-face {
+  font-family: Poppins;
+  font-weight: 400;
+  font-style: normal;
+  src: url("https://fonts.shopifycdn.com/poppins/poppins_n4.934accbf9f5987aa89334210e6c1e9151f37d3b6.woff2?&hmac=a26c177067467710b799e13b71d5721f54b5f733f905988a09d37a77232f0126") format("woff2"), url("https://fonts.shopifycdn.com/poppins/poppins_n4.ee28d4489eaf5de9cf6e17e696991b5e9148c716.woff?&hmac=f99517b82b6da9de0cdfe8aceb40e4132652b5e3e3d1c3b0906fe722b210b3bf") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Poppins;
+  font-weight: 500;
+  font-style: normal;
+  src: url("https://fonts.shopifycdn.com/poppins/poppins_n5.25334cd7ff48c81cfd51a6bc5a81d92a1b4d4501.woff2?&hmac=7c769f34464988924e0239b014212cd09a9296c7fbb19a3c413b94209150e545") format("woff2"), url("https://fonts.shopifycdn.com/poppins/poppins_n5.fc8eae64d8f1b5d2b8c42b45ddc0749aff4750a6.woff?&hmac=4b2b2a55d3f66823cbe20552c9b9a6df54d6d80c39b3c22ccdf696eb9cda3658") format("woff"); }
+
+@font-face {
+  font-family: Poppins;
+  font-weight: 700;
+  font-style: normal;
+  src: url("https://fonts.shopifycdn.com/poppins/poppins_n7.58aca33913fc6666cc9e8a53f6b16ec5c3c05a3f.woff2?&hmac=8d9dd384d209499b478bf98b5485682c900079f51dff31fd22117f7f73d1adda") format("woff2"), url("https://fonts.shopifycdn.com/poppins/poppins_n7.59016f931f3f39434d2e458fba083eb7db7a07d9.woff?&hmac=a0a4a74efb931c7132a3c607f37b39af6fd1456988c215c0931d93fb078d2658") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Poppins;
+  font-weight: 600;
+  font-style: normal;
+  src: url("https://fonts.shopifycdn.com/poppins/poppins_n6.e2fdd168541a5add2d1a8d6f2b89b09c9c9e690d.woff2?&hmac=070e2cd74b7ec49cf30bdef0e50787089feaa27225ce611013fd06d4ca01553c") format("woff2"), url("https://fonts.shopifycdn.com/poppins/poppins_n6.6d62d2d0f11a9ff578d200ad2154f9860db165c1.woff?&hmac=a495883fa0fc3470c933bcf888dab412c02adbee6b4d4d2a4c901b077ddacf01") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Poppins;
+  font-weight: 800;
+  font-style: normal;
+  src: url("https://fonts.shopifycdn.com/poppins/poppins_n8.e821d8377bfc98fd4c56ddab54cb84aabf4d9ee2.woff2?&hmac=11bcc5af86a5149baabc734a82dc06c67e2b7175d432b0b4c13a6e8ae70318bc") format("woff2"), url("https://fonts.shopifycdn.com/poppins/poppins_n8.73a1c32138bba2bbe794554f6cb6069e1ea1e118.woff?&hmac=5562aa43308f3d594fe647c6d7d32b4993114b34f92fa317cea5e603d2e60452") format("woff");
+  font-display: swap;
+ }
+
+:root {
+  --font-family-base: "Poppins", sans-serif;
+  --font-family-heading: "Kavoon", sans-serif;
+  --max-width: 1280px;
+  --header-height: 3.5rem;
+  --primary-color: rgb(6, 9, 34);
+  --primary-opacity-color: rgba(0, 0, 0, 0.685);
+  --secondary-color: rgb(9, 175, 244);
+  --three-color: rgb(237, 97, 255);
+  --white-color: rgb(255, 255, 255);
+  --black-color: rgb(0, 0, 0);
+  --bg-animated: rgba(0, 5, 51, 0.795);
+  --linear-gradient: linear-gradient(to right, var(--secondary-color) 0%, var(--three-color) 100%);
+  --blur-px: blur(5px);
+}
+
+/* Reset */
+html {
+  box-sizing: border-box;
+  font-family: var(--font-family-base);
+  font-size: 16px;
+  scroll-padding-top: var(--header-height);
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  scrollbar-gutter: stable both-edges;
+  overflow-y: scroll;
+  color: var(--text-color);
+  position: relative;
+  width: 100vw;
+  height: auto;
+  background-color: var(--primary-color);
+}
+
+
+a {
+  color: var(--white-color);
+  transition: all 0.5s ease-out;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.strong {
+  font-weight: 200;
+  color: var(--three-color);
+}
