@@ -11,6 +11,7 @@ Una aplicación web moderna y receptiva construida con React, Vite y React Route
 - **Escaparate de Marcas**: Destaca marcas y productos destacados
 - **Sección Acerca de**: Conoce más sobre la empresa y sus valores
 
+
 ## 🛠️ Tecnologías Utilizadas
 
 - **Frontend**:
