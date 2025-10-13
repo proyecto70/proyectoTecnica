@@ -50,10 +50,8 @@ export const Header = () => {
             }}>
                 <a onClick={handlerActivateMenuBurguer} href="#section-init">Inicio</a>
                 <a onClick={handlerActivateMenuBurguer} href="#section-category">Categorias</a>
-                <a onClick={handlerActivateMenuBurguer} href="#list-products">Productos</a>
                 <a onClick={handlerActivateMenuBurguer} href="#section-marks">Marcas</a>
                 <a onClick={handlerActivateMenuBurguer} href="#section-about-me">Conocenos</a>
-                <a onClick={handlerActivateMenuBurguer} href="#section-footer">Contactanos</a>
             </div>
             <p className="title-logo">TECHPARTS ONLINE</p>
             <div onClick={handlerActivateCart} className="container-img-cart-shop">
