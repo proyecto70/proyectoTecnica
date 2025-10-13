@@ -1,6 +1,7 @@
 import { useContext, useEffect, useState } from "react"; // <== agrega useState y useEffect
 import { CartShop } from "../../components/cart-shop/CartShop";
 import { contextAppCreate } from "../../../domain/context/app/ProviderApp";
+import { SectionHoverCategory } from "../../components/section-hover-category/Section-hover-category";
 import "./Header.css";
 
 export const Header = () => {
@@ -9,10 +10,11 @@ export const Header = () => {
         activateCart, 
         activateAddCart, 
         cartShopData,
-        dispatch 
+        dispatch,
     } = useContext(contextAppCreate);
 
     const [isScrolled, setIsScrolled] = useState(false);
+    const [activateHoverCategory, setActivateHoverCategory ] = useState(false);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -23,6 +25,10 @@ export const Header = () => {
 
         return () => globalThis.removeEventListener("scroll", handleScroll);
     }, []);
+
+    const handlerActivateHoverCategory = () => {
+        setActivateHoverCategory(!activateHoverCategory);
+    }
 
     const handlerActivateMenuBurguer = () => {
         dispatch({ type: "SET_ACTIVATE_MENU_BURGUER", payload: !activateMenuBurguer });
@@ -60,17 +66,16 @@ export const Header = () => {
             <p className="title-logo">TECHPARTS ONLINE</p>
             <div className="container-menu">
                 <a href="#section-init">Inicio</a>
-                <a href="#section-category">Categorias</a>
-                <a href="#list-products">Productos</a>
+                <a onClick={handlerActivateHoverCategory}>Categorias</a>
                 <a href="#section-marks">Marcas</a>
                 <a href="#section-about-me">Conocenos</a>
-                <a href="#section-footer">Contactanos</a>
             </div>
             <div onClick={handlerActivateCart} className="container-img-cart-shop">
                 <i className="fa-solid fa-cart-shopping"></i>
                 {activateAddCart ? <p>{cartShopData.productsList.length}</p> : null}
             </div>
             {activateCart && <CartShop />}
+            {  activateHoverCategory && <SectionHoverCategory /> }
         </nav>
         </>
     );

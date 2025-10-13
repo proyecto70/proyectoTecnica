@@ -5,7 +5,7 @@ export const SectionInit = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
 
     const images = [
-        "imgs/logo-ml.jfif",
+        "imgs/logo-ml.jpg",
     ];
 
     useEffect(() => {
@@ -31,26 +31,8 @@ export const SectionInit = () => {
             </div>
             <div className="container-init">
                 <div className="container-info-init">
-                    <div className="container-reds">
-                        <a href="http://" target="_blank" rel="noopener noreferrer">
-                            <i className="fab fa-facebook-f"></i> 
-                        </a>
-                        <a href="http://" target="_blank" rel="noopener noreferrer">
-                            <i className="fab fa-youtube"></i>   
-                        </a>
-                        <a href="http://" target="_blank" rel="noopener noreferrer">
-                            <i className="fab fa-instagram"></i>     
-                        </a>
-                        <a href="http://" target="_blank" rel="noopener noreferrer">
-                            <i className="fab fa-whatsapp"></i>       
-                        </a>
-                        <a href="http://" target="_blank" rel="noopener noreferrer">
-                            <i className="fab fa-x-twitter"></i>     
-                        </a>
-                    </div>
                     <h3>Los mejores productos</h3>
                     <p>Tu universo tecnológico en un solo lugar</p>
-                    <a href="#products">Productos</a>
                 </div>
                 <div className="container-imgs-carousel">
                     <img

@@ -1,0 +1,26 @@
+.container-hover-category {
+    background-color: rgb(255, 255, 255);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    top: 80%;
+    left: calc( 50% - 12rem );
+    width: max-content;
+    height: auto;
+    cursor: default;
+    z-index: 15;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-content: center;
+    gap: 1.5rem;
+}
+
+.container-hover-category > a {
+    font-size: 1rem;
+    cursor: pointer;
+    color: var(--three-color);
+}
+
+.container-hover-category > a:hover {
+    color: var(--secondary-color);
+}

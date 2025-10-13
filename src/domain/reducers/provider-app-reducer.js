@@ -98,6 +98,14 @@ export const useProviderReducer = (state, action) => {
                         totalPrice: newTotalUpdated
                     }
                 };    
+        case "SET_FILTERED_BY_MARK_LIST_PRODUCTS":
+            const listProductsAllMark = listProductsData;
+            const markSelected = action.payload;
+            const filteredListMark = listProductsAllMark.filter(product => product.mark === markSelected);
+            return {
+                ...state,
+                listProducts: filteredListMark
+            };
         case "SET_FILTERED_BY_CATEGORY_LIST_PRODUCTS":
             const listProductsAll = listProductsData;
             const categorySelected = action.payload;
